@@ -743,6 +743,52 @@ If you claim a vendor bill, the status changes from :guilabel:`Draft` to :guilab
 automatically. Considering this as best practice, all the claimed documents should be canceled as
 they won't be valid for your accounting records.
 
+Electronic Purchase Invoice
+---------------------------
+
+The Electronic Purchase Invoice is an available feature included in the `l10n_cl_edi module`.
+
+Once all configurations have been made for :ref:`electronic invoices <chile/electronic-invoice>` 
+(e.g., uploading a valid company certificate, setting up master data, etc.), the electronic 
+purchase invoice need their own :abbr:`CAFs (Folio Authorization Code)`. Please refer to the 
+:ref:`CAF documentation <chile/caf-documentation>` to check the details on how to acquire the 
+:abbr:`CAFs (Folio Authorization Code)` for electronic purchase invoices.
+
+Electronic purchase invoices are useful when vendors are not obligated to expedite an electronic 
+vendor bill for your purchase. Still, your obligations require a document to be sent to the SII 
+as proof of purchase.
+
+Configurations
+~~~~~~~~~~~~~~
+
+To create a purchase journal, navigate to :menuselection:`Accounting --> Configuration --> Journals`. 
+Then, click the :guilabel:`New` button, and fill in the following required information:
+
+- :guilabel:`Type`: select :guilabel:`Purchase` from the drop-down menu for vendor bill journals.
+- :guilabel:`Use Documents`: check this field for the journal to be able to generate electronic 
+documents (in this case the electronic purchase invoice).
+
+Generate an Electronic Purchase Invoice
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To generate this type of document, it is necessary to create a vendor bill in Odoo, navigate to 
+:menuselection:`Accounting --> Vendors --> Bills`, and click the :guilabel:`New` button.
+
+When all of the electronic purchase invoice information is filled, select the option *(46) Electronic 
+Purchase Invoice* in the :guilabel:`Document Type` field:
+
+.. image:: chile/cl-type46-selection.png
+   :align: center
+   :alt: Selecting document type 46 in a vendor bill
+   
+After the vendor bill is posted:
+
+- The DTE file (Electronic Tax Document) is created automatically and added to the chatter.
+- The DTE SII Status is set as Pending to be sent.
+
+The DTE Status is automatically updated by Odoo with a scheduled action that runs every day at night. 
+To get a response from the SII immediately, press the :guilabel:`Send now to SII` button.
+
 Delivery guide
 --------------
 
