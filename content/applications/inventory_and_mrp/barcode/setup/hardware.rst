@@ -76,7 +76,7 @@ Zebra scanner
 When using Zebra scanners, ensure the following keystroke configurations are set to prevent errors.
 
 Begin on the Zebra scanner's home screen, and select the :guilabel:`DataWedge` app (the app is
-represented by a :guilabel:`(light blue barcode)` icon).
+represented by a :guilabel:`light blue barcode` icon).
 
 On the :guilabel:`DataWedge Profiles` page, select the profile option to access the Zebra scanner's
 settings.
@@ -105,4 +105,55 @@ Once that option is enabled, go back to the :guilabel:`Profile` options page, an
    Odoo **cannot** recognize the barcodes that are scanned.
 
 Once all those steps have been taken, perform a test scan to ensure the Zebra scanner is working
+properly, as intended.
+
+Honeywell mobile computer scanner
+=================================
+
+When using Honeywell scanners, ensure the following configurations are set to prevent errors.
+
+Begin on the Honeywell scanner's home screen, and select :guilabel:`Settings`, represented by a
+:guilabel:`⚙️ (gear)` icon. Then, click :guilabel:`Honeywell Settings`, followed by
+:guilabel:`Scanning`.
+
+From here, click :guilabel:`Internal Scanner`, followed by :guilabel:`Default Profile`. From the
+resulting list of options, select :guilabel:`Data Processing Settings`.
+
+The :guilabel:`Data Processing Settings` specify how barcode data is processed by the computer.
+Locate the :guilabel:`Wedge Method` setting. By default, this is set to :guilabel:`Standard`. Change
+the :guilabel:`Wedge Method` setting to :guilabel:`Keyboard`.
+
+.. image:: hardware/hardware-honeywell-settings.png
+   :align: center
+   :alt: Data processing settings options for Honeywell scanner.
+
+Once all those steps have been taken, perform a test scan to ensure the Honeywell scanner is working
+properly, as intended.
+
+Cipherlab mobile computer scanner
+=================================
+
+When using Cipherlab scanners, ensure the following configurations are set to prevent errors.
+
+Begin on the Cipherlab scanner's home screen, and navigate to the :menuselection:`App Drawer (All
+Applications)`. Then, click the :guilabel:`ReaderConfig` app, represented by an orange
+:guilabel:`⚙️ (gear)` icon laid over a blue barcode icon.
+
+Next, select the :guilabel:`Default Profile`, or create a new profile, if needed.
+
+Under the :guilabel:`General Settings`, click :guilabel:`Data Output`, followed by
+:guilabel:`Keyboard Emulation`.
+
+.. image:: hardware/hardware-cipherlab-settings.png
+   :align: center
+   :alt: Cipherlab scanner data output setting page.
+
+By default, the :guilabel:`Input Method` under :guilabel:`Keyboard Emulation` is set to
+:guilabel:`Default Mode`. Change this setting to :guilabel:`KeyEvent`.
+
+.. image:: hardware/hardware-cipherlab-emulation.png
+   :align: center
+   :alt: Cipherlab scanner keyboard emulation settings.
+
+Once all those steps have been taken, perform a test scan to ensure the Cipherlab scanner is working
 properly, as intended.
