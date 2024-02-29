@@ -2,11 +2,10 @@
 Job positions
 =============
 
-In the default :menuselection:`Recruitment` dashboard view, all job positions are shown, regardless
-of status. Current published positions with active applicants are shown, as well as job positions
-that have been created but have not yet been published.
+In the default :menuselection:`Recruitment` dashboard view, all job positions are shown, including
+positions being actively recruited for, as well as inactive positions.
 
-Each job position is shown in an individual kanban card. If the job position is active and
+Each job position is shown in an individual Kanban card. If the job position is active and
 candidates can apply, then a :guilabel:`Published` banner will appear in the top-right corner of the
 card.
 
@@ -19,18 +18,23 @@ View submitted applications by clicking anywhere on a job position card.
 Create a new job position
 =========================
 
-Create a new job position from the main Recruitment dashboard by clicking the :guilabel:`New` button
-in the top-left corner.
+Create a new job position from the main Recruitment dashboard. Click the :guilabel:`New` button
+in the top-left corner, and a :guilabel:`Create a Job Position` pop-up window appears.
 
-Then, a :guilabel:`Create a Job Position` pop-up window will appear. From here, enter the name of
-the position (such as `Sales Manager`, `Mechanical Engineer`, etc.). When complete, click the
-:guilabel:`Create` button to save the entry, or the :guilabel:`Discard` button to delete it.
+First, enter the name of the position (such as `Sales Manager`, `Mechanical Engineer`, etc.).
+
+Next, enter an :guilabel:`Application email` by typing in the email ame in the first field, then
+select the second half of the email using the drop-down menu,. Applicants can sed a resumé to this
+specific email address, and Odoo creates an application for them automatically.
+
+When complete, click the :guilabel:`Create` button to save the entry, or the :guilabel:`Discard`
+button to delete it.
 
 .. image:: new_job/job-title.png
    :align: center
    :alt: Create a new job position.
 
-Once the job position has been created, it will appear as a card in the kanban view on the main
+Once the job position has been created, it will appear as a card in the Kanban view on the main
 :guilabel:`Recruitment` dashboard.
 
 Edit a new job position
